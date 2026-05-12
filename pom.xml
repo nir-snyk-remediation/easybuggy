@@ -93,12 +93,18 @@
 		<dependency>
 			<groupId>org.slf4j</groupId>
 			<artifactId>slf4j-api</artifactId>
-			<version>1.5.0</version>
+			<version>1.7.36</version>
 		</dependency>
 		<dependency>
 			<groupId>org.slf4j</groupId>
-			<artifactId>slf4j-log4j12</artifactId>
-			<version>1.5.0</version>
+			<artifactId>slf4j-reload4j</artifactId>
+			<version>1.7.36</version>
+		</dependency>
+		<!-- Pin reload4j >=1.2.22 (SNYK-JAVA-CHQOSRELOAD4J-5731326); slf4j-reload4j 1.7.36 pulls 1.2.19 -->
+		<dependency>
+			<groupId>ch.qos.reload4j</groupId>
+			<artifactId>reload4j</artifactId>
+			<version>1.2.22</version>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.directory.server</groupId>
@@ -115,6 +121,12 @@
 			<groupId>org.owasp.esapi</groupId>
 			<artifactId>esapi</artifactId>
 			<version>2.1.0.1</version>
+			<exclusions>
+				<exclusion>
+					<groupId>log4j</groupId>
+					<artifactId>log4j</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 		<dependency>
 			<groupId>ognl</groupId>
