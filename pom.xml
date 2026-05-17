@@ -116,6 +116,12 @@
 			<artifactId>esapi</artifactId>
 			<version>2.1.0.1</version>
 		</dependency>
+		<!-- CVE-2022-34169 / SNYK-JAVA-XALAN-2953385: ESAPI pulls xalan 2.7.0 via xom -->
+		<dependency>
+			<groupId>xalan</groupId>
+			<artifactId>xalan</artifactId>
+			<version>2.7.3</version>
+		</dependency>
 		<dependency>
 			<groupId>ognl</groupId>
 			<artifactId>ognl</artifactId>
