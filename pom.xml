@@ -126,10 +126,11 @@
 			<artifactId>javax.mail</artifactId>
 			<version>1.5.1</version>
 		</dependency>
+		<!-- SNYK-JAVA-ORGAPACHELOGGINGLOG4J-15967769: 2.25.4 required for clean PR delta vs master -->
 		<dependency>
 		    	<groupId>org.apache.logging.log4j</groupId>
 		    	<artifactId>log4j-core</artifactId>
-		    	<version>2.3.1</version>
+		    	<version>2.25.4</version>
 		</dependency>
 	</dependencies>
 	
