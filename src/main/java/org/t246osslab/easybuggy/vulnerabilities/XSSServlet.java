@@ -37,7 +37,7 @@ public class XSSServlet extends AbstractServlet {
                 // Reverse the given string
                 String reversedName = StringUtils.reverse(string);
                 bodyHtml.append(getMsg("label.reversed.string", locale) + " : "
-                        + reversedName);
+                        + encodeForHTML(reversedName));
             } else {
                 bodyHtml.append(getMsg("msg.enter.string", locale));
             }
